@@ -1,0 +1,11 @@
+from math import ceil
+print("What's the total length?")
+length=input()
+print("How far does the snail travel during the day?")
+day = input()
+print("how far does the snail fall?")
+night = input()
+eachday = (int(day)-int(night))
+qq = (float(length))/(eachday)
+answer = ceil(qq)
+print("It will take " + str(answer) + " days for the snail to travel " + str(length) + " feet")
